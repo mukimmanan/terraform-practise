@@ -1,0 +1,4 @@
+# Order of Precedence for input varibales
+defaults < env variables < terraform.tfvars file 
+< terraform.tfvars.json < *.auto.tfvars or *.auto.tfvars.json
+< command line -var and -var-file
