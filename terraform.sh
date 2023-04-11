@@ -18,5 +18,9 @@ terraform state
 terraform plan -out <path where to store plan>
 terraform apply <plan>
 terraform init -migrate-state
+terraform plan -referesh-only
 
 terraform apply -lock-timeout=60s
+terraform refresh # is deprecating
+
+terraform init backend-config=<paritial-backend> -migrate-state
